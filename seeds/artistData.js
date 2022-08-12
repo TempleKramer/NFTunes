@@ -24,5 +24,10 @@ const artistData = [
         Singles_Sold: 'Null',
         genre_id: 3,
         filename: ''
-    }
-]
+    },
+];
+
+const seedArtist = () => Artist.bulkCreate(artistData);
+
+module.exports = seedArtist;
+
