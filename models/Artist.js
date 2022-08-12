@@ -19,13 +19,19 @@ Artist.init(
           allowNull: true,
 
         },
-        recordsSold: {
+        albumsSold: {
           type: DataTypes.STRING,
-          allowNull: true 
+          allowNull: true, 
 
         },
-       
-    },  
+        singlesSold: {
+          type: DataTypes.STRING,
+          allowNull: true,
+        
+        },
+      },  
+    
+    
     {
         sequelize,
         freezeTableName: true,
