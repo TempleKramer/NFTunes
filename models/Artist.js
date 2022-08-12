@@ -1,6 +1,7 @@
-const { Sequelize, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+class Artist extends Model {}
 
 Artist.init(
     {
@@ -29,15 +30,20 @@ Artist.init(
           allowNull: true,
         
         },
-      },  
-    
-    
+        // genre_id: {
+        //     type: DataTypes.STRING,
+        //     references: {
+        //       model: 'genre',
+        //       key: 'id'
+        //     }
+        //   }
+    },  
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'genre',
+        modelName: 'artist',
     }
 )
 
-module.exports = Genre
+module.exports = Artist
