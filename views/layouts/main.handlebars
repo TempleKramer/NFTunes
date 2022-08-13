@@ -1,22 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;900&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+          <div class="overlay" data-overlay></div>
+          <a href="#" class="logo">
+            <img src="../public/images/NFTunes logo.png" width="300" height="80" alt="NFTunesLogo">
+          </a>
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <p class="navbar-title">Menu</p>
+              <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </button>
+            </div>
     
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NFTunes</title>
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-    </head>
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-navlink>Home</a>
+              </li>
 
-    <body>
-        <header>
+              <li>
+                <a href="#collection" class="navbar-link" data-navlink>Collection</a>
+              </li>
+    
+              <li>
+                <a href="#instruction" class="navbar-link" data-navlink>Instruction</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link" data-navlink>Contact</a>
+              </li>
+            </ul>
+    
+          </nav>
+    
+          <button class="menu-open-btn" nftunes-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+    
+          <a href="#" class="btn" nftunes-login="login">
+            <ion-icon name="login-outline"></ion-icon>
+    
+            <span id="login">LogIn</span>
+          </a>
+    
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h2 class="h1 hero-title">Discover, and contribute extraordinary NFTs</h2>
+                    <p class="hero-text">
+                    Explore the world's best music artist NFT marketplace
+                    </p>
+            </div>
+        </section>
+        <section class="section explore" id="explore">
+            <div class="container">
+                <div class="title-wrapper">
+                    <h2 class="h2 section-title">Explore</h2>
+                </div>
 
-        </header>
-        <nav>
+                <ul class="grid-list">
+                    <li>
+                        <div class="card explore-card">
+                            <figure class="card-banner">
+                                <a href="#">
+                                    <img src="images/nft 1.jpg" width="600" height="600" alt="" class="img-cover">
+                                </a>
+                            </figure>
 
-        </nav>
-        <main>
-            
-        </main>
-    </body>
+                            <h3 class="h3 card-title">
+                            <a href="#">Title</a>
+                            </h3>
+
+                            <span class="card-artist">
+                            Artist <a href="#" class="artist-link">Artist</a>
+                            </span>
+
+                            <div class="award">
+                                <span class="awards">Awards</span>
+                            </div>
+
+                            <button class="btn">
+                                <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                                <span href="">Buy</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li>
+                    <div class="card explore-card">
+                        <figure class="card-banner">
+                        <a href="#">
+                            <img src="" width="600" height="600" alt="" class="img-cover">
+                        </a>
+                        </figure>
+
+                        <h3 class="h3 card-title">
+                        <a href="#">Title</a>
+                        </h3>
+
+                        <span class="card-artist">
+                        Artist <a href="#" class="artist-link">John Deo</a>
+                        </span>
+
+                        <div class="award">
+                        <data class="awards">Awards</data>
+                        </div>
+
+                        <button class="btn">
+                        <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                        <span href="">Buy</span>
+                        </button>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="card explore-card">
+                        <figure class="card-banner">
+                        <a href="#">
+                            <img src="" width="600" height="600" alt="" class="img-cover">
+                        </a>
+                        </figure>
+
+                        <h3 class="h3 card-title">
+                        <a href="#">Title</a>
+                        </h3>
+
+                        <span class="card-artist">
+                        Artist <a href="#" class="artist-link">John Doe</a>
+                        </span>
+
+                        <div class="award">
+                        <data class="awards">Awards</data>
+                        </div>
+
+                        <button class="btn">
+                        <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                        <span href="">Buy</span>
+                        </button>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="card explore-card">
+                        <figure class="card-banner">
+                        <a href="#">
+                            <img src="" width="600" height="600" alt="" class="img-cover">
+                        </a>
+                        </figure>
+
+                        <h3 class="h3 card-title">
+                        <a href="#">Title</a>
+                        </h3>
+
+                        <span class="card-artist">
+                        Artist <a href="#" class="artist-link">John Doe</a>
+                        </span>
+
+                        <div class="award">
+                        <data class="awards">Awards</data>
+                        </div>
+
+                        <button class="btn">
+                        <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                        <span href="">Buy</span>
+                        </button>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="card explore-card">
+                        <figure class="card-banner">
+                        <a href="#">
+                            <img src="" width="600" height="600" alt="" class="img-cover">
+                        </a>
+                        </figure>
+
+                        <h3 class="h3 card-title">
+                        <a href="#">Title</a>
+                        </h3>
+
+                        <span class="card-artist">
+                        Artist<a href="#" class="artist-link">John Doe</a>
+                        </span>
+
+                        <div class="award">
+                        <data class="awards">Award</data>
+                        </div>
+
+                        <button class="btn">
+                        <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                        <span href="">Buy</span>
+                        </button>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="card explore-card">
+                        <figure class="card-banner">
+                        <a href="#">
+                            <img src="" width="600" height="600" alt="" class="img-cover">
+                        </a>
+                        </figure>
+
+                        <h3 class="h3 card-title">
+                        <a href="#">Title</a>
+                        </h3>
+
+                        <span class="card-artist">
+                        Artist <a href="" class="artist-link">John Doe</a>
+                        </span>
+
+                        <div class="award">
+                        <data class="awards">Awards</data>
+                        </div>
+
+                        <button class="btn">
+                        <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                        <span href="">Buy</span>
+                        </button>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+</body>
 </html>
