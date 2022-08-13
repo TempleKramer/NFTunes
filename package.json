@@ -9,5 +9,9 @@
     "mysql2": "^2.3.3",
     "node": "^18.7.0",
     "sequelize": "^6.21.3"
+  },
+    "scripts": {
+      "seed": "node seeds/index.js"
+    }
+
   }
-}
