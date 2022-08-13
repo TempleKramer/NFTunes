@@ -7,22 +7,22 @@ NFTunes is an application designed to help NFT customers find current NFT's for 
 
 
 # Table of contents
-* Installation
-* Usage
-* Credits
-* License
-* Test
-* Questions
+* [Installation](Installation)
+* [Usage](Usage)
+* [Credits](Credits)
+* [License](License)
+* [Test](Test)
+* [Questions](Questions)
 
 # Usage
 
 Welcome to NFTunes! Your application for all NFT's for sale by your favorite music genre and artists. 
 
 # Credits
-This application was built using:
-HTML, CSS, JavaScript
-Express
-MYSQL
+This application was built using: 
+<br>HTML, CSS, JavaScript
+<br>Express
+<br>MYSQL
 
 # License
 License: MIT
