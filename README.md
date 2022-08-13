@@ -7,12 +7,14 @@ NFTunes is an application designed to help NFT customers find current NFT's for 
 
 
 # Table of contents
-* [Installation](Installation)
-* [Usage](Usage)
-* [Credits](Credits)
-* [License](License)
-* [Test](Test)
-* [Questions](Questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Test](#test)
+* [Questions](#questions)
+
+# Installation
 
 # Usage
 
