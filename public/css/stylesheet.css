@@ -12,7 +12,7 @@
 }
 
 li { 
-    list-style: none; 
+  list-style: none; 
 }
 
 a {
@@ -21,11 +21,11 @@ a {
 }
 
 a, img, svg, span, input, button, ion-icon {
-    display: block; 
+  display: block; 
 }
 
 img {
-    height: auto; 
+  height: auto; 
 }
 
 input, button {
@@ -35,11 +35,11 @@ input, button {
 }
 
 input {
-    width: 100%; 
+  width: 100%; 
 }
 
 button {
-    cursor: pointer; 
+  cursor: pointer; 
 }
 
 ion-icon {
@@ -48,11 +48,11 @@ ion-icon {
 }
 
 ::selection {
-    background-color: whitesmoke; 
+  background-color: whitesmoke; 
 }
 
 :focus-visible {
-    outline-offset: 4px; 
+  outline-offset: 4px; 
 }
 
 html {
@@ -68,7 +68,7 @@ body {
 }
 
 .container {
-    padding-inline: 25px; 
+  padding-inline: 25px; 
 }
 
 .btn {
@@ -87,7 +87,7 @@ body {
 }
 
 .btn:is(:hover, :focus) {
-  background-image: linear-gradient(150deg, var(--indigo) 0%, var(--han-purple) 78%);
+  background-image: linear-gradient(150deg, red 0%, rebeccapurple 78%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 120% 120%;
