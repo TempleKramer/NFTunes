@@ -13,7 +13,8 @@ NFTunes is an application designed to help NFT customers find current NFT's for 
 * License
 * Test
 * Questions
-* Usage
+
+# Usage
 
 Welcome to NFTunes! Your application for all NFT's for sale by your favorite music genre and artists. 
 
