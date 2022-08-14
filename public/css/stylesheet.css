@@ -344,11 +344,76 @@ body {
   padding: 8px 15px;
 }
 
+/*Footer*/
+
+.footer img {
+  height: 100px;
+}
+
+.footer-top {
+  padding-block: 90px; 
+  border-block-end: 1px solid black;
+  display: right;
+  gap: 50px 40px;
+}
+
+.footer-text {
+  color: black;
+  margin-block: 15px 24px;
+}
+
+.footer-list-title {
+  color: black;
+  font-family: 'Jost', sans-serif;
+  font-size: 3;
+  margin-block-end: 20px;
+}
+
+.footer-link {
+  width: max-content;
+  color: grey;
+  margin-block: 12px;
+  transition: 0.05s ease;
+}
+
+.footer-link:is(:hover, :focus) {
+  text-decoration: underline;
+  background-color: black;
+}
+
+
+/*Back to top btn*/
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  background-color: grey;
+  color: black;
+  font-size: 2rem;
+  padding: 15px 12px;
+  border-radius: 6;
+  box-shadow: 0px 2px 4px black;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.05s ease;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+.back-to-top:is(:hover, :focus) {
+  background-color: black;
+}
+
 /*media querie*/
 
 @media (min-width: 575px) {
   .grid-list, footer-top {
-  grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -356,7 +421,6 @@ body {
   .header .btn > span {
     display: block;
     padding: 12px 30px;
-    justify-content: flex-end;
   }
 
   .hero {
@@ -374,10 +438,6 @@ body {
 @media (min-width: 992px) {
   .grid-list {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .btn {
-    justify-content: flex-end;
   }
 
   .footer-top {
