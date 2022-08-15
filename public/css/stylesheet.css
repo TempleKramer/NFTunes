@@ -101,6 +101,7 @@ body {
   line-height: 1.2;
 }
 
+
 .section {
   padding-block-start: 90; 
 }
@@ -125,6 +126,8 @@ body {
 .grid-list {
   display: grid;
   gap: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .card {
@@ -287,6 +290,46 @@ body {
   z-index: -1;
 }
 
+/*/searchbar/*/
+.text {
+  color: white;
+  padding: 28px 40px ;
+  font-size: 3.4rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  background: #7c7c7c2c;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  padding: 0.4em 1em;
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  background-color: black;
+  font-family: inherit;
+  color: white;
+  font-size: 105%;
+  width: 80%;
+}
+
 /*explore*/
 
 .section-title {
@@ -354,9 +397,8 @@ body {
 }
 
 .footer-top {
-  padding-block: 90px; 
+  padding-block: 160px 60px; 
   border-block-end: 1px solid black;
-  display: right;
   gap: 50px 40px;
 }
 
@@ -413,10 +455,47 @@ body {
 }
 
 /*media querie*/
+@media (min-width: 280px) {
+  .grid-list, footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header .btn > span {
+    display: block;
+    padding: 12px 30px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container {
+    padding-inline: 25px;
+    padding-bottom: 2px;
+  }
+}
 
 @media (min-width: 575px) {
   .grid-list, footer-top {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .header .btn > span {
+    display: block;
+    padding: 12px 30px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container {
+    padding-inline: 25px;
+    padding-bottom: 2px;
   }
 }
 
