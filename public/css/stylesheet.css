@@ -63,9 +63,9 @@ body {
   padding-inline: 25px; 
   padding-bottom: 25px;
 }
- span {
+
+.login {
   font-size: 3rem;
-  display: block;
  }
  
 .btn {

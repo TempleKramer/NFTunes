@@ -2,13 +2,14 @@
 
 const path = require('path');
 const router = require('express').Router();
+const artist = require
 
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/index.html'));
+  res.sendFile(path.join(__dirname, '../views/layouts/main.handlebars'));
 });
 
 router.get('/genres', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/genres.html'));
+  res.sendFile(path.join(__dirname, ''));
 });
 
 router.get('/pop-artists', (req, res) => {
@@ -22,7 +23,7 @@ router.get('/rock-artists', (req, res) => {
 });
 
 router.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/index.html'));
+  res.sendFile(path.join(__dirname, '../views/layouts/main.handlebars'));
 });
 
 module.exports = router;

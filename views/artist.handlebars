@@ -5,131 +5,37 @@
                 <h2 class="h2 section-title">Explore</h2>
             </div>
 
+            {{#if loggedIn}}
+            {{!-- <ul class="grid-list">
+                {{#each artist-detail.handlebars}}
+                {{> artist-detail}}
+                {{/each}}
+            </ul> --}}
+            {{#each artistData}}
             <ul class="grid-list">
                 <li>
                     <div class="card explore-card">
                         <figure class="card-banner">
                             <a href="#">
-                                <img src="images/nft 1.jpg" width="600" height="600" alt="" class="img-cover">
+                            <img src="{{image}}" width="600" height="600" alt="{{image.description}}" class="img-cover">
                             </a>
                         </figure>
-
+                        
                         <h3 class="h3 artist-title">
-                        <a href="#">Title</a>
+                        <a href="">{{name}}</a>
                         </h3>
 
-                        <span class="card-artist">
-                        Artist <a href="#" class="artist-link">Artist</a>
-                        </span>
-
                         <div class="award">
-                            <span class="awards">Awards</span>
+                            <span class="awards">{{awards}}</span>
                         </div>
                     </div>
                 </li>
-
-                <li>
-                <div class="card explore-card">
-                    <figure class="card-banner">
-                    <a href="#">
-                        <img src="" width="600" height="600" alt="" class="img-cover">
-                    </a>
-                    </figure>
-
-                    <h3 class="h3 artist-title">
-                    <a href="#">Title</a>
-                    </h3>
-
-                    <span class="card-artist">
-                    Artist <a href="#" class="artist-link">John Deo</a>
-                    </span>
-
-                    <div class="award">
-                    <data class="awards">Awards</data>
-                    </div>
-                </div>
-                </li>
-
-                <li>
-                <div class="card explore-card">
-                    <figure class="card-banner">
-                    <a href="#">
-                        <img src="" width="600" height="600" alt="" class="img-cover">
-                    </a>
-                    </figure>
-
-                    <h3 class="h3 artist-title">
-                    <a href="#">Title</a>
-                    </h3>
-
-                    <span class="card-artist">
-                    Artist <a href="#" class="artist-link">John Doe</a>
-                    </span>
-
-                    <div class="award">
-                    <data class="awards">Awards</data>
-                    </div>
-                </div>
-                </li>
-
-                <li>
-                <div class="card explore-card">
-                    <figure class="card-banner">
-                    <a href="#">
-                        <img src="" width="600" height="600" alt="" class="img-cover">
-                    </a>
-                    </figure>
-
-                    <h3 class="h3 artist-title">
-                    <a href="#">Title</a>
-                    </h3>
-
-                    <span class="card-artist">
-                    Artist <a href="#" class="artist-link">John Doe</a>
-                    </span>
-
-                    <div class="award">
-                    <data class="awards">Awards</data>
-                    </div>
-                </div>
-                </li>
-
-                <li>
-                <div class="card explore-card">
-                    <figure class="card-banner">
-                    <a href="#">
-                        <img src="" width="600" height="600" alt="" class="img-cover">
-                    </a>
-                    </figure>
-
-                    <h3 class="h3 artist-title">
-                    <a href="#">Title</a>
-                    </h3>
-
-                    <div class="award">
-                    <data class="awards">Award</data>
-                    </div>
-                </div>
-                </li>
-
-                <li>
-                <div class="card explore-card">
-                    <figure class="card-banner">
-                    <a href="#">
-                        <img src="" width="600" height="600" alt="" class="img-cover">
-                    </a>
-                    </figure>
-
-                    <h3 class="h3 artist-title">
-                    <a href="#">{{name}}</a>
-                    </h3>
-
-                    <div class="award">
-                    <data class="awards">{{awards}}</data>
-                    </div>
-                </div>
-                </li>
+                {{/each}}
             </ul>
         </div>
     </section>
 </main>
+
+{{else}}
+<a href="/public/js/login.js">You must login first to view NFTs</a>
+{{/if}}
