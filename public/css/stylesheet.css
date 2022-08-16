@@ -20,7 +20,7 @@ a {
   color: inherit;
 }
 
-a, img, svg, span, input, button, ion-icon {
+a, img, svg, input, button, ion-icon {
   display: block; 
 }
 
@@ -63,17 +63,21 @@ body {
   padding-inline: 25px; 
   padding-bottom: 25px;
 }
-
+ span {
+  font-size: 3rem;
+  display: block;
+ }
+ 
 .btn {
   color: white;
-  font-weight: 700;
-  border: 2px solid white;
-  padding: 4px 10px;
+  font-weight: 900;
+  border: 1.5px white;
+  padding: 20px 10px;
   border-radius: 50px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 5px;
+  justify-content: center;
 }
 
 .btn ion-icon {
@@ -81,7 +85,7 @@ body {
 }
 
 .btn:is(:hover, :focus) {
-  background-image: linear-gradient(150deg, red 0%, rebeccapurple 78%);
+  background-image: linear-gradient(150deg, rgb(128, 5, 5) 20%, rgb(37, 11, 65) 78%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 120% 120%;
@@ -291,7 +295,7 @@ body {
 }
 
 /*/searchbar/*/
-.text {
+/* .text {
   color: white;
   padding: 28px 40px ;
   font-size: 3.4rem;
@@ -328,7 +332,7 @@ input.search-bar {
   color: white;
   font-size: 105%;
   width: 80%;
-}
+} */
 
 /*explore*/
 

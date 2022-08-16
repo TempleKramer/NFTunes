@@ -17,3 +17,7 @@ let search = (artistData) => {
     
     
 }
+
+$(document).ready(function() {
+    var 
+})
