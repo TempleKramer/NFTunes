@@ -3,6 +3,7 @@ const { Artist } = require('../models')
 const artistData = [
     {
         name: 'Kings of Leon',
+        image: "./images/Profiles/Kings of Leon-Profile.jpg",
         awards:'Grammy: 4, Brit Awards: 2, MTV Europe Awards: 12',
         Albums_Sold: 'Over 21 million Albums',
         Singles_Sold: 'Over 38 million Singles',
@@ -15,7 +16,7 @@ const artistData = [
         Albums_Sold: 'Over 20 million Albums',
         Singles_Sold: 'Over 175 million Singles',
         genre_id: 2,
-        filename: ''
+        filename: href="google.com"
     },
     {
         name: 'Lil Pump',
