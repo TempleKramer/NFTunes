@@ -1,3 +1,5 @@
+// for Inez to merge with handlebars
+
 const path = require('path');
 const router = require('express').Router();
 
