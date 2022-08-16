@@ -349,7 +349,7 @@ input.search-bar {
   margin-block-end: 35px;
 }
 
-.explore-card .card-title > a:is(:hover, :focus) {
+.explore-card .artist-title > a:is(:hover, :focus) {
   color: rebeccapurple; 
 }
 
