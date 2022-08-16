@@ -33,10 +33,10 @@ Artist.init(
     
     
     {
-        sequelize,
-        freezeTableName: true,
-        underscored: true,
-        modelName: 'genre',
+      sequelize,
+      freezeTableName: true,
+      underscored: true,
+      modelName: 'genre',
     }
 )
 
