@@ -39,10 +39,16 @@ Artist.init(
         //   }
     },  
     {
+
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'artist',
+
+      sequelize,
+      freezeTableName: true,
+      underscored: true,
+      modelName: 'genre',
+
     }
 )
 
