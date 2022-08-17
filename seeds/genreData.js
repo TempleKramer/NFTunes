@@ -8,7 +8,7 @@ const genreData = [
         name: 'Pop'
     },
     {
-        name: 'rap'
+        name: 'Rap'
     }
 ]
 

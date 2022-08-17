@@ -1,43 +1,50 @@
-const { Sequelize, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+class Artist extends Model {}
 
 Artist.init(
-    {
-        id: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          primaryKey: true,
-          autoIncrement: true,
-        },
-        name: {
-          type: DataTypes.STRING,
-          allowNull: false,
-        },
-        awards: {
-          type: DataTypes.STRING,
-          allowNull: true,
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    artist: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    exhibition_date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    gallery_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'genre',
+        key: 'id',
+      },
+    },
+  },
+  {
+    sequelize,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'artist',
+  }
+);
 
-        },
-        albumsSold: {
-          type: DataTypes.STRING,
-          allowNull: true, 
-
-        },
-        singlesSold: {
-          type: DataTypes.STRING,
-          allowNull: true,
-        
-        },
-      },  
-    
-    
-    {
-      sequelize,
-      freezeTableName: true,
-      underscored: true,
-      modelName: 'genre',
-    }
-)
-
-module.exports = Genre
+module.exports = Artist;
