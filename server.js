@@ -4,7 +4,7 @@ const express = require('express')
 
 const PORT = process.env.PORT || 3001
 const app = express()
-const routes = require('./controllers/')
+const routes = require('./controllers')
 
 const hbs = exphbs.create();
 app.engine('handlebars', hbs.engine);
@@ -18,4 +18,4 @@ app.use(routes)
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`)
-})
+});
