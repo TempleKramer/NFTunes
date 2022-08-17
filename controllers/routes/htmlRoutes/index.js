@@ -1,9 +1,12 @@
 const path = require('path');
 const router = require('express').Router();
-const artist = require
 
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../views/layouts/main.handlebars'));
+  res.render('homepage');
+});
+
+router.get('/profile', (req, res) => {
+  res.render('profile');
 });
 
 router.get('/genres', (req, res) => {
