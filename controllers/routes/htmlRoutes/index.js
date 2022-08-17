@@ -1,5 +1,3 @@
-// for Inez to merge with handlebars
-
 const path = require('path');
 const router = require('express').Router();
 const artist = require
@@ -21,6 +19,10 @@ router.get('/rap-artists', (req, res) => {
 router.get('/rock-artists', (req, res) => {
   res.sendFile(path.join(__dirname, '../../public/rock-artists.html'));
 });
+
+router.get('/login', (req, res) => {
+  res.render('login');
+})
 
 router.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../views/layouts/main.handlebars'));
