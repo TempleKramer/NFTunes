@@ -1,16 +1,20 @@
 const path = require('path');
+const Artist = require('../../../models/Artist');
+const Genre = require('../../../models/Genre')
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
   res.render('homepage');
 });
 
-router.get('/profile', (req, res) => {
-  res.render('profile');
+router.get('/profile', async (req, res) => {
+  const allArtists = await Artist.getAll()
+  res.render('profile', { allArtists })
+
 });
 
 router.get('/genres', (req, res) => {
-  res.sendFile(path.join(__dirname, ''));
+  res.sendFile(path.join(__dirname, ''))
 });
 
 router.get('/pop-artists', (req, res) => {
