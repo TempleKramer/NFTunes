@@ -1,0 +1,19 @@
+<main>
+      <section class="hero" id="home">
+        <div class="container">
+          <h2 class="h1 hero-title">Discover, and contribute extraordinary NFTs</h2>
+            <p class="hero-text">
+              Explore the world's best music artist NFT marketplace
+            </p>
+        </div>
+      </section>
+      {{#if loggedIn}}
+      <button id="logout" class="btn">Logout</button>
+      {{else}}
+      <a href="#" class="btn" nftunes-login="login">
+          <ion-icon name="login-outline"></ion-icon>
+          <span class="login" id="login">LogIn</span>
+      </a>
+      {{/if}}
+      {{body}}
+    </main>
