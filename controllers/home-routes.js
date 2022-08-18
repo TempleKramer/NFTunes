@@ -16,6 +16,18 @@ router.get('/', async (req, res) =>
       console.log(err)
       res.status(500).json(err)
     }))
+
+    router.get('/pop-artists', async (req, res) => 
+
+      await Artist.findAll()
+      .then(dbArtistData => {
+        console.log(dbArtistData[0])
+        res.render('pop-artists', dbArtistData[0])
+      })
+      .catch(err => {
+        console.log(err)
+        res.status(500).json(err)
+      }))
 //     const genres = dbGenreData.map((artist) =>
 //       genres.get({ plain: true })
 //     );
