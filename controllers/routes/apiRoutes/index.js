@@ -1,3 +1,8 @@
-const router = require('express').Router();
+const router = require('express').Router()
 
-const userRoutes = require('./user-routes');
+router.get('/', (req, res) => {
+    res.render("ok")
+   })
+
+module.exports = router;
+
