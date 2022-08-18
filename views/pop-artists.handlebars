@@ -1,3 +1,12 @@
+
+<section class="hero" id="home">
+  <div class="container">
+    <h2 class="h1 hero-title">THIS IS SECOND PAGE</h2>
+      <p class="hero-text">
+        SECOND PAGE WORKS
+      </p>
+  </div>
+</section>
 <main>
     <section class="section explore" id="explore">
         <div class="container">
@@ -5,14 +14,14 @@
                 <h2 class="h2 section-title">Explore</h2>
             </div>
 
-            {{#if loggedIn}}
+            {{!-- {{#if loggedIn}} --}}
             {{!-- <ul class="grid-list">
                 {{#each artist-detail.handlebars}}
                 {{> artist-detail}}
                 {{/each}}
             </ul> --}}
-            {{#each artistData}}
-            <ul class="grid-list">
+            {{!-- {{#each artistData}} --}}
+             <ul class="grid-list">
                 <li>
                     <div class="card explore-card">
                         <figure class="card-banner">
@@ -30,12 +39,20 @@
                         </div>
                     </div>
                 </li>
-                {{/each}}
             </ul>
         </div>
     </section>
 </main>
 
-{{else}}
+{{!-- {{else}}
 <a href="/public/js/login.js">You must login first to view NFTs</a>
 {{/if}}
+{{#if loggedIn}}
+<button id="logout" class="btn">Logout</button>
+{{else}}
+<a href="#" class="btn" nftunes-login="login">
+    <ion-icon name="login-outline"></ion-icon>
+    <span class="login" id="login">LogIn</span>
+</a>
+{{/if}} --}}
+{{body}}

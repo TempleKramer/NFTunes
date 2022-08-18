@@ -20,9 +20,9 @@ router.get('/', async (req, res) =>
     router.get('/pop-artists', async (req, res) => 
 
       await Artist.findAll()
-      .then(dbArtistData => {
-        console.log(dbArtistData[0])
-        res.render('pop-artists', dbArtistData[0])
+      .then(ArtistData => {
+        console.log(ArtistData[0])
+        res.render('pop-artists', ArtistData[0])
       })
       .catch(err => {
         console.log(err)
