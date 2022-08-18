@@ -23,13 +23,50 @@ router.get('/', async (req, res) =>
       .then(ArtistData => {
         console.log(ArtistData)
         res.render('pop-artists', {
-          name: 'Kings of Leon',
-          image: "./images/Profiles/Kings of Leon-Profile.jpg",
-          awards:'Grammy: 4, Brit Awards: 2, MTV Europe Awards: 12',
-          Albums_Sold: 'Over 21 million Albums',
-          Singles_Sold: 'Over 38 million Singles',
-          genre_id: 1,
+          name: 'Shawn Mendes',
+          image: './images/Profiles/Shawn-Mendes-Profile.jpg',
+          awards:'Grammy: 3 nominations, Juno Awards: 13, MTV Europe Awards: 11 ',
+          Albums_Sold: 'Over 20 million Albums',
+          Singles_Sold: 'Over 175 million Singles',
+          genre_id: 2,
+          filename: href="google.com"
+        })
+      })
+      .catch(err => {
+        console.log(err)
+        res.status(500).json(err)
+      }))
+    router.get('/rap-artists', async (req, res) => 
+
+      await Artist.findAll()
+      .then(ArtistData => {
+        console.log(ArtistData)
+        res.render('rap-artists', {
+          name: 'Lil Pump',
+          awards:'Null',
+          Albums_Sold: 'Over 1 million Albums',
+          Singles_Sold: 'Null',
+          genre_id: 3,
           filename: ''
+        })
+      })
+      .catch(err => {
+        console.log(err)
+        res.status(500).json(err)
+      }))
+    router.get('/rock-artists', async (req, res) => 
+
+      await Artist.findAll()
+      .then(ArtistData => {
+        console.log(ArtistData)
+        res.render('pop-artists', {
+          name: 'Shawn Mendes',
+          image: './images/Profiles/Shawn-Mendes-Profile.jpg',
+          awards:'Grammy: 3 nominations, Juno Awards: 13, MTV Europe Awards: 11 ',
+          Albums_Sold: 'Over 20 million Albums',
+          Singles_Sold: 'Over 175 million Singles',
+          genre_id: 2,
+          filename: href="google.com"
         })
       })
       .catch(err => {

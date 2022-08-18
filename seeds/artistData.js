@@ -12,6 +12,7 @@ const artistData = [
     },
     {
         name: 'Shawn Mendes',
+        image: "./images/Profiles/Shawn-Mendes_Profile.jpg",
         awards:'Grammy: 3 nominations, Juno Awards: 13, MTV Europe Awards: 11 ',
         Albums_Sold: 'Over 20 million Albums',
         Singles_Sold: 'Over 175 million Singles',

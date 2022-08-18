@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;900&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
 
 <section class="hero" id="home">
   <div class="container">
@@ -15,12 +29,7 @@
             </div>
 
              <ul class="grid-list">
-                {{#each artist}}
-
-                {{else}}
-                <p>There are no artists</p>
-                {{/each}}
-                <li>
+                {{!-- <li>
                     <div class="card explore-card">
                         <figure class="card-banner">
                             <a href="#">
@@ -36,7 +45,28 @@
                             <span class="awards">{{awards}}</span>
                         </div>
                     </div>
-                </li>
+                </li> --}}
+                  <li>
+                        <div class="card explore-card">
+                            <figure class="card-banner">
+                                <a href="#">
+                                    <img src="{{image}}" width="600" height="600" alt="" class="img-cover">
+                                </a>
+                            </figure>
+
+                            <h3 class="h3 card-title">
+                            <a href="#">{{name}}</a>
+                            </h3>
+                            <div class="award">
+                                <span class="awards">Awards: {{awards}}</span>
+                            </div>
+
+                            <button class="btn">
+                                <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                                <span href="">Buy</span>
+                            </button>
+                        </div>
+                    </li>
             </ul>
         </div>
     </section>
