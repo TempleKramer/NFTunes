@@ -21,8 +21,16 @@ router.get('/', async (req, res) =>
 
       await Artist.findAll()
       .then(ArtistData => {
-        console.log(ArtistData[0])
-        res.render('pop-artists', ArtistData[0])
+        console.log(ArtistData)
+        res.render('pop-artists', {
+          name: 'Kings of Leon',
+          image: "./images/Profiles/Kings of Leon-Profile.jpg",
+          awards:'Grammy: 4, Brit Awards: 2, MTV Europe Awards: 12',
+          Albums_Sold: 'Over 21 million Albums',
+          Singles_Sold: 'Over 38 million Singles',
+          genre_id: 1,
+          filename: ''
+        })
       })
       .catch(err => {
         console.log(err)

@@ -1,9 +1,9 @@
 
 <section class="hero" id="home">
   <div class="container">
-    <h2 class="h1 hero-title">THIS IS SECOND PAGE</h2>
+    <h2 class="h1 hero-title">POP ARTISTS</h2>
       <p class="hero-text">
-        SECOND PAGE WORKS
+        Explore NTF's from POP artists
       </p>
   </div>
 </section>
@@ -14,14 +14,12 @@
                 <h2 class="h2 section-title">Explore</h2>
             </div>
 
-            {{!-- {{#if loggedIn}} --}}
-            {{!-- <ul class="grid-list">
-                {{#each artist-detail.handlebars}}
-                {{> artist-detail}}
-                {{/each}}
-            </ul> --}}
-            {{!-- {{#each artistData}} --}}
              <ul class="grid-list">
+                {{#each artist}}
+
+                {{else}}
+                <p>There are no artists</p>
+                {{/each}}
                 <li>
                     <div class="card explore-card">
                         <figure class="card-banner">
@@ -55,4 +53,4 @@
     <span class="login" id="login">LogIn</span>
 </a>
 {{/if}} --}}
-{{body}}
+{{{body}}}
