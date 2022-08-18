@@ -1,4 +1,5 @@
 const exphbs = require('express-handlebars');
+const sequelize = require('./config/connection')
 
 const express = require('express')
 
@@ -16,6 +17,10 @@ app.use(express.static('public'))
 
 app.use(routes)
 
-app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}!`)
+// app.listen(PORT, () => {
+//     console.log(`API server now on port ${PORT}!`)
+// });
+
+sequelize.sync({ force: true }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
 });
