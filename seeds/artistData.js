@@ -21,6 +21,7 @@ const artistData = [
     },
     {
         name: 'Lil Pump',
+        image: "./images/Profiles/Lil Pump-Profile.jpg",
         awards:'Null',
         Albums_Sold: 'Over 1 million Albums',
         Singles_Sold: 'Null',
