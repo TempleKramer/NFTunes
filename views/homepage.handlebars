@@ -13,14 +13,14 @@
             <div class="title-wrapper">
                 <h2 class="h2 section-title">Explore</h2>
             </div>
-
-            {{!-- {{#if loggedIn}} --}}
-            {{!-- <ul class="grid-list">
-                {{#each artist-detail.handlebars}}
-                {{> artist-detail}}
-                {{/each}}
-            </ul> --}}
-            {{!-- {{#each artistData}} --}}
+            {{#if loggedIn}}
+            <button id="logout" class="btn">Logout</button>
+            {{else}}
+            <a href="./login.handlebars" class="btn" nftunes-login="login">
+                <ion-icon name="login-outline"></ion-icon>
+                <span class="login" id="login">Login</span>
+            </a>
+            {{/if}}
              <ul class="grid-list">
                     <li>
                         <div class="card explore-card">
@@ -43,11 +43,13 @@
                             </h3>
                         </div>
                     </li>
-
                 </ul>
         </div>
     </section>
 </main>
+{{#if loggedIn}}
+<script src="/public/js/logout.js"></script>
+{{/if}}
 
 {{!-- {{else}}
 <a href="/public/js/login.js">You must login first to view NFTs</a>
@@ -60,4 +62,4 @@
     <span class="login" id="login">LogIn</span>
 </a>
 {{/if}} --}}
-{{body}}
+
