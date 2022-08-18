@@ -25,14 +25,15 @@ This application was built using:
 <br>HTML, CSS, JavaScript
 <br>Express
 <br>MYSQL
+<br>
 
 # License
 License: MIT
 
 # Contributions
-Temple Kramer - 
-Saidana -
-Inez Jimenez -
+Temple Kramer -https://github.com/TempleKramer
+Saidana -https://github.com/smillkaa
+Inez Jimenez -https://github.com/inezjimenez
 
 # Test
 None
