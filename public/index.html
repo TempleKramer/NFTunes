@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;900&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+          <div class="overlay" data-overlay></div>
+          <a href="#" class="logo">
+            <img src="./images/NFTuneslogo.png" width="300" height="80" alt="NFTunesLogo">
+          </a>
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <p class="navbar-title">Menu</p>
+              <button class="nav-close-btn" nftunes-label="Close Menu" data-nav-close-btn>
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-navlink>Home</a>
+              </li>
+
+              <li>
+                <a href="#collection" class="navbar-link" data-navlink>Collection</a>
+              </li>
+    
+              <li>
+                <a href="#instruction" class="navbar-link" data-navlink>Instruction</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link" data-navlink>Contact</a>
+              </li>
+            </ul>
+    
+          </nav>
+    
+          <button class="menu-open-btn" nftunes-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+    
+    
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h2 class="h1 hero-title">Discover, and contribute extraordinary NFTs</h2>
+                <p class="hero-text">
+                    Explore the world's best music artist NFT marketplace
+                </p>
+            </div>
+        </section>
+        <section class="section explore" id="explore">
+            <div class="container">
+                <div class="title-wrapper">
+                    <h2 class="h2 section-title">Explore</h2>
+                </div>
+                <!-- <a href="#" class="btn" nftunes-login="login">
+                    <ion-icon name="login-outline"></ion-icon>
+                    <span class="login" id="login">Login</span>
+                </a> -->
+                <!-- <div class="search-card">
+                    <div class="explore-text">
+                      <h2 id="searchbar-text" class="text">Search for your NFT</h2>
+                      <img scr="" alt="" class="icon"/>
+                    </div>
+                    <div class="search">
+                      <input id="search-bar" type="text" class="search-bar" placeholder="Search by genre or artist">
+                      <button id="search-button" class="searchicon-button"><svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 30 30" width="1.5em" height="1.5em"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/></svg></button>
+                    </div>
+                </div> -->
+                <ul class="grid-list">
+                    <li>
+                        <div class="card explore-card">
+                            <figure class="card-banner">
+                                <a href="#">
+                                    <img src="./images/Profiles/Kings of Leon-Profile.jpg" width="600" height="600" alt="" class="img-cover">
+                                </a>
+                            </figure>
+
+                            <h3 class="h3 artist-title">
+                            <a href="#">Kings of Leon</a>
+                            </h3>
+
+                            <span class="card-artist">
+                                Awards <a href="#" class="artist-link"></a>
+                            </span>
+
+                            <button class="btn">
+                                <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                                <span href="">Buy</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card explore-card">
+                            <figure class="card-banner">
+                                <a href="#">
+                                    <img src="./images/Profiles/gogoodolls.jpg" width="600" height="600" alt="" class="img-cover">
+                                </a>
+                            </figure>
+
+                            <h3 class="h3 artist-title">
+                            <a href="#">Goo Goo Dolls</a>
+                            </h3>
+
+                            <span class="card-artist">
+                                Awards <a href="#" class="artist-link"></a>
+                            </span>
+
+                            <button class="btn">
+                                <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                                <span href="">Buy</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./images/NFTuneslogo.png"></img>
+                    </a>
+                    <p class="footer-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+                        Reprehenderit dignissimos architecto, rerum nihil ea modi voluptate,<br> 
+                        esse dolorum mollitia omnis molestias atque obcaecati<br>
+                        impedit quasi asperiores recusandae dolores magni voluptas!<br>
+                    </p>
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Useful Links</p>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/decentraland/what-are-nfts-5616fdbc2a95" class="footer-link">
+                                What are NFTs?
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2022 
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="back-to-top" nftunes-label="Back to Top" data-back-to-top-btn>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
