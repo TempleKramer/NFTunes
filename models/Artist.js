@@ -47,7 +47,7 @@ Artist.init(
       sequelize,
       freezeTableName: true,
       underscored: true,
-      modelName: 'genre',
+      modelName: 'artist',
 
     }
 )
