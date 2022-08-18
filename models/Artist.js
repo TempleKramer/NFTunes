@@ -4,13 +4,13 @@ const sequelize = require('../config/connection');
 class Artist extends Model {}
 
 Artist.init(
-    {
-        id: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          primaryKey: true,
-          autoIncrement: true,
-        },
+  {
+    id: {
+      type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+      },
         name: {
           type: DataTypes.STRING,
           allowNull: false,
@@ -39,10 +39,9 @@ Artist.init(
         //   }
     },  
     {
-
-        sequelize,
-        freezeTableName: true,
-        underscored: true,
+      sequelize,
+      freezeTableName: true,
+      underscored: true,
 
       sequelize,
       freezeTableName: true,
