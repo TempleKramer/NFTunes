@@ -19,10 +19,7 @@ Artist.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    exhibition_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
+   
     filename: {
       type: DataTypes.STRING,
       allowNull: false,
