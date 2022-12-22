@@ -12,6 +12,8 @@
     "sequelize": "^6.21.3"
   },
   "scripts": {
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "build": "yarn",
+    "start": "node seeds/index.js node server.js"
   }
 }
